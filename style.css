@@ -1,5 +1,5 @@
 body {
-    font-family: Ariel, sans-serif;
+    font-family: 'Merriweather', serif;
     margin: 0;
     padding: 0;
 }
@@ -28,13 +28,29 @@ nav ul li a {
 
 main {
     padding: 2rem;
+    text-align: left;
 }
 
-.prifle-picture {
-    width: 150px;
-    height: 150px;
+.intro-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.profile-picture {
+    width: 96px;
+    height: 96px;
     border-radius: 50%;
     margin-top: 1rem;
+}
+
+.intro-text {
+    text-align: 600px;
+}
+
+.intro-text h1 {
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 footer {
