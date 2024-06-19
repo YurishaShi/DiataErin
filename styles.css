@@ -1,785 +1,428 @@
+/* General Styles */
 {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: Poppins, sans-serif, arial;
-	outline: none;
-	text-decoration: none;
-	border: none;
-	transition: all 0.2s linear;
-	scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-	overflow-x: hidden;
-	background: #ffe6f2;
+    background: #f4f4f4;
+    color: #333;
 }
 
 .container {
-	position: relative;
-	width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
 }
 
+/* Header Styles */
 .Header {
-	position: fixed;
-	display: flex;
-	flex-flow: column;
-	justify-content: space-between;
-	align-items: center;
-	background: #d63384;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	width: 300px;
-	padding: 5rem 3rem;
-	z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.Header nav {
-	position: relative;
-	top: 0;
-	left: 0;
-	overflow: hidden;
+.Header-title h3 {
+    font-size: 1.5rem;
+    color: #333;
+    text-transform: uppercase;
 }
 
-.Header ul {
-	position: relative;
-	width: 100%;
+.Header-title h3 span {
+    color: #ff69b4;
 }
 
-.Header li {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	list-style: none;
-	padding: 10px 5px;
+nav ul {
+    display: flex;
+    list-style: none;
 }
 
-.Header li a {
-	text-decoration: none;
-	color: #fff;
-	transition: 0.5s;
-	font-size: 19px;
+nav ul li {
+    margin-left: 20px;
 }
 
-.Header li a span {
-	color: #ff69b4;
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    position: relative;
 }
 
-.Header li a:hover {
-	letter-spacing: 3px;
-	color: #ff69b4;
+nav ul li a:hover {
+    color: #ff69b4;
 }
 
-.Header-title {
-	font-size: 2em;
-	font-weight: 800;
-	text-decoration: none;
-	color: #fff;
+/* Profile Section */
+.Profile {
+    text-align: center;
+    padding: 60px 0;
 }
 
-.Header-title span {
-	color: #ff69b4;
-}
-
-.Social-link {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-}
-
-.Social-link a {
-	display: inline-block;
-	padding: 8px;
-	font-size: 1.5em;
-	color: #fff;
-	transition: 0.5s;
-}
-
-.Social-link a:hover {
-	color: #ff69b4;
-}
-
-.main {
-	position: absolute;
-	top: 0;
-	left: 300px;
-	width: calc(100% - 300px);
-}
-
-.main .Profile {
-	flex: 1 1 30rem;
-}
-
-.main .Profile img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	position: relative;
-	border-radius: 50%;
-	overflow: hidden;
-}
-
-.Content {
-	position: relative;
-	display: flex;
-	align-items: center;
-	min-height: 100vh;
-	padding: 1rem 5%;
-	gap: 10px;
-	flex-wrap: wrap;
-}
-
-.Content div {
-	margin-bottom: 5px;
+.Profile img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .Introduction {
-	flex: 1 1 30rem;
-}
-
-.Introduction div {
-	margin-bottom: 8px;
-}
-
-.Introduction .Greet p {
-	color: #ff69b4;
-	font-size: 1.2em;
-	font-weight: 500;
+    padding: 20px 0;
 }
 
 .Introduction .Text-name p {
-	font-size: 3em;
-	font-weight: 600;
-	color: #ff69b4;
-}
-
-.Introduction .Text-name p span {
-	color: #000;
-	margin-right: 10px;
+    font-size: 2rem;
+    color: #333;
 }
 
 .Introduction .Job-description p {
-	font-size: 1.5em;
-	font-weight: 500;
+    font-size: 1.2rem;
+    color: #666;
 }
 
-.Introduction .Description p {
-	color: #4a4a4a;
+.Introduction .Greet p {
+    font-size: 1rem;
+    color: #888;
 }
 
-.Description {
-	flex: 1;
-}
-
-.About-me .About-me-button {
-	background: #ff69b4;
-	color: #fff;
-	padding: 10px 35px;
-	border: none;
-	transition: 0.5s;
-}
-
-.About-me .About-me-button:hover {
-	padding: 10px 40px;
-	color: #fff;
-	background: #d63384;
-	letter-spacing: 3px;
-}
-
+/* About Me Section */
 .About-me {
-	margin-top: 1.5rem;
-}
-
-.Header-text h3 {
-	font-size: 2.5em;
-	font-weight: 600;
-	color: #ff69b4;
-	margin-bottom: 10px;
-}
-
-.Header-text h3 span {
-	color: #000;
-	margin-right: 10px;
-}
-
-.About-me-content .My-Profile .left {
-	flex: 1 1 30rem;
-}
-
-.About-me-content .My-Profile .left img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	box-shadow: 0.5px 0.1px 15px 5px rgba(0, 0, 0, 0.1);
-	border-radius: 0.3rem;
-	border: 10px solid #fff;
-	overflow: hidden;
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
 }
 
 .About-me-content {
-	position: relative;
-	left: 0;
-	top: 0px;
-	padding: 1rem 5%;
-	padding-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
-.My-Profile {
-	position: relative;
-	display: flex;
-	gap: 20px;
-	flex-wrap: wrap;
+.About-me-content .left img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.right {
-	flex: 1 1 30rem;
+.About-me-content .right {
+    max-width: 600px;
 }
 
-.right div {
-	padding-bottom: 5px;
-}
-
-.Information {
-	position: relative;
-	top: 10px;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.Information span {
-	margin-right: 5px;
-	color: #ff69b4;
+.About-me-content .right p {
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .Information p {
-	color: #666;
+    font-size: 1rem;
+    color: #666;
 }
 
-.My-skills-grid p,
-.Desc-introduction {
-	color: #666;
-}
-
-.left-info div,
-.right-info div {
-	margin-bottom: 5px;
-}
-
-.left-info {
-	flex: 1 1 10rem;
-}
-
-.right-info {
-	font-size: 1 1 10rem;
-}
-
-.Header-name p {
-	font-size: 2.2em;
-	font-weight: 600;
-}
-
-.Download-cv {
-	display: inline-block;
+.Information p span {
+    font-weight: bold;
+    color: #333;
 }
 
 .Download-cv .Hire-me-button,
 .Download-cv .Download-cv-button {
-	background: #ff69b4;
-	border: none;
-	color: #fff;
-	font-weight: 500;
-	font-size: 1rem;
-	padding: 8px 25px;
-	outline: none;
-	transition: 0.5s;
-	margin-top: 1rem;
-	display: inline-block;
+    background: #ff69b4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
 }
 
 .Download-cv .Hire-me-button:hover,
 .Download-cv .Download-cv-button:hover {
-	color: #fff;
-	letter-spacing: 2px;
-	background: #d63384;
+    background: #e0558c;
 }
 
+/* Skills Section */
 .My-skills {
-	position: relative;
-	left: 0;
-	top: 0;
-	padding: 1rem 5%;
-	padding-top: 0;
-	padding-bottom: 0;
+    padding: 60px 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.My-skills .Header-text h3 {
+    font-size: 2rem;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .My-skills-content {
-	position: relative;
-	display: flex;
-	gap: 1.5rem;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.My-skills-right .My-skills-grid {
-	position: relative;
-	display: flex;
-	gap: 1em;
-	flex-wrap: wrap;
-}
-
-.My-skills-right .My-skills-grid div {
-	background: #fff;
-	border: none;
-	padding: 1.5rem;
-	border-radius: 0.4rem;
-	box-shadow: 0.1rem 0.1rem 0.7rem 0.2rem rgba(0, 0, 0, 0.1);
-	flex: 1 1 10rem;
-}
-
+.My-skills-left,
 .My-skills-right {
-	flex: 1 1 20rem;
+    flex: 1 1 300px;
+    margin: 10px;
 }
 
 .My-skills-left div {
-	margin: 0 0 30px;
-	width: 100%;
+    margin-bottom: 20px;
 }
 
 .My-skills-left p {
-	display: flex;
-	justify-content: space-between;
-	padding: 0 0 0.5rem;
-	font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
-.My-skills-left .progress-bar {
-	width: 100%;
-	background-color: #ccc;
-	height: 0.7rem;
-	border-radius: 10px;
-	overflow: hidden;
+.progress-bar {
+    background: #ddd;
+    height: 10px;
+    border-radius: 5px;
 }
 
-.My-skills-left {
-	flex: 1 1 20rem;
+.progress-bar span {
+    display: block;
+    height: 100%;
+    border-radius: 5px;
+    background: #ff69b4;
 }
 
-.My-skills-left .progress-bar span {
-	background: #ff69b4;
-	height: 100%;
-	display: block;
-	border-radius: 10px;
+.My-skills-right ul {
+    list-style: none;
+    padding: 0;
 }
 
-.My-skills-left div:nth-child(1) .progress-bar span {
-	width: 95%;
-}
-.My-skills-left div:nth-child(2) .progress-bar span {
-	width: 80%;
-}
-.My-skills-left div:nth-child(3) .progress-bar span {
-	width: 75%;
-}
-.My-skills-left div:nth-child(4) .progress-bar span {
-	width: 85%;
+.My-skills-right ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #666;
 }
 
-.My-skills-right h1 {
-	color: #ff69b4;
-	font-weight: 600;
-	font-size: 1.8rem;
-}
-
+/* Services Section */
 .My-services {
-	position: relative;
-	left: 0;
-	top: 0;
-	padding: 1rem 5%;
-	padding-top: 0;
-	min-height: 100vh;
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
 }
 
 .My-services-content {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .My-services-content div {
-	text-align: center;
-	padding: 1.5rem;
-	background: #fff;
-	flex: 1 1 20rem;
-	box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+    flex: 1 1 300px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    transition: transform 0.3s;
 }
 
-.My-services-content div i {
-	color: #fff;
-	background: #ff69b4;
-	font-size: 1.5rem;
-	border-radius: 50%;
-	width: 3.5rem;
-	height: 3.5rem;
-	display: inline-block;
-	line-height: 2.5;
+.My-services-content div:hover {
+    transform: translateY(-10px);
 }
 
-.My-services-content div h3 {
-	padding: 0.6rem 0 0;
-	font-size: 1.3rem;
-	font-weight: 600;
+.My-services-content i {
+    font-size: 2rem;
+    color: #ff69b4;
+    margin-bottom: 10px;
 }
 
-.My-services-content div p {
-	padding-top: 0.5rem;
-	color: #666;
-	font-size: 1rem;
-	font-weight: 400;
+.My-services-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
 }
 
+.My-services-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Qualifications Section */
 .Qualification {
-	position: relative;
-	left: 0;
-	top: 0;
-	padding: 1rem 5%;
+    padding: 60px 0;
+    background: #f4f4f4;
+    text-align: center;
 }
 
 .Qualification-content {
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	gap: 2rem;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .Education,
 .Work {
-	flex: 1 1 25rem;
+    flex: 1 1 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .Education div,
 .Work div {
-	position: relative;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	padding-bottom: 1.5rem;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
-.Education div i,
-.Work div i {
-	font-size: 1.5rem;
-	color: #ff69b4;
+.Education div:last-child,
+.Work div:last-child {
+    margin-bottom: 0;
 }
 
-.Education div .name,
-.Work div .name {
-	padding-left: 0.8rem;
+.Education i,
+.Work i {
+    font-size: 1.5rem;
+    color: #ff69b4;
 }
 
-.Education div .name h3,
-.Work div .name h3 {
-	font-size: 1.3rem;
-	color: #ff69b4;
+.name h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
 }
 
-.Education div .name p,
-.Work div .name p {
-	font-size: 1rem;
-	color: #666;
+.name p {
+    font-size: 1rem;
+    color: #666;
 }
 
-.Education div .timeline,
-.Work div .timeline {
-	position: absolute;
-	left: 10px;
-	top: 35px;
-	bottom: -12px;
-	width: 2px;
-	background: #ddd;
+.timeline {
+    width: 2px;
+    background: #ddd;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 30px;
+}
+
+.timeline:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #ff69b4;
+    border-radius: 50%;
+    position: absolute;
+    left: -4px;
+    top: 0;
+}
+
+.timeline:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #ff69b4;
+    border-radius: 50%;
+    position: absolute;
+    left: -4px;
+    bottom: 0;
+}
+
+.Education div:first-child .timeline,
+.Work div:first-child .timeline {
+    top: 0;
 }
 
 .Education div:last-child .timeline,
 .Work div:last-child .timeline {
-	display: none;
+    bottom: 0;
 }
 
+/* Contact Section */
 .Contact {
-	position: relative;
-	left: 0;
-	top: 0;
-	padding: 1rem 5%;
-	padding-bottom: 0;
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
 }
 
 .Contact-content {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	gap: 1rem;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .Contact-left,
 .Contact-right {
-	flex: 1 1 25rem;
-}
-
-.Contact-left {
-	padding: 1rem 0;
+    flex: 1 1 400px;
 }
 
 .Contact-left div {
-	padding-bottom: 2rem;
-}
-
-.Contact-left h3 {
-	font-size: 1.5rem;
-	font-weight: 600;
-	color: #ff69b4;
-	padding: 1rem 0;
-}
-
-.Contact-left p {
-	color: #666;
-	font-weight: 400;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .Contact-left div i {
-	font-size: 1.5rem;
-	color: #ff69b4;
+    font-size: 1.5rem;
+    color: #ff69b4;
+    margin-right: 10px;
 }
 
 .Contact-left div span {
-	padding-left: 1rem;
+    font-size: 1rem;
+    color: #666;
 }
 
 .Contact-right form {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.7rem;
-	justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .Contact-right form input,
 .Contact-right form textarea {
-	padding: 1rem;
-	border-radius: 0.4rem;
-	background: #eee;
-	color: #000;
-	width: 100%;
-	font-size: 1rem;
-}
-
-.Contact-right form textarea {
-	resize: none;
+    flex: 1 1 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #666;
+    outline: none;
+    resize: none;
 }
 
 .Contact-right form .submit-button {
-	background: #ff69b4;
-	color: #fff;
-	padding: 12px 25px;
-	border: none;
-	transition: 0.5s;
-	cursor: pointer;
+    background: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
 .Contact-right form .submit-button:hover {
-	letter-spacing: 3px;
-	background: #d63384;
+    background: #e0558c;
 }
 
-@media (max-width: 991px) {
-	.main {
-		width: 100%;
-		left: 0;
-	}
-	.Header {
-		flex-flow: row;
-		justify-content: space-between;
-		width: 100%;
-		height: 100px;
-		padding: 0 5%;
-	}
-	.Header ul {
-		display: flex;
-		justify-content: space-between;
-		padding: 0;
-	}
-	.Header li {
-		padding: 0;
-	}
-}
-
+/* Media Queries */
 @media (max-width: 768px) {
-	.Header-title {
-		font-size: 1.5rem;
-	}
-	.Header li a {
-		font-size: 0.8rem;
-	}
-	.Header {
-		padding: 0 1rem;
-	}
-	.Profile img {
-		height: 300px;
-		width: 300px;
-	}
-	.Introduction .Text-name p {
-		font-size: 1.5rem;
-	}
-	.Introduction .Job-description p {
-		font-size: 1.2rem;
-	}
-	.Introduction .Greet p {
-		font-size: 1rem;
-	}
-	.About-me .About-me-button {
-		font-size: 0.7rem;
-	}
-	.Header-text h3 {
-		font-size: 1.8rem;
-	}
-	.About-me-content .My-Profile .left img {
-		height: 250px;
-		width: 250px;
-	}
-	.Information p {
-		font-size: 0.9rem;
-	}
-	.Information p span {
-		font-size: 0.8rem;
-	}
-	.Download-cv .Hire-me-button,
-	.Download-cv .Download-cv-button {
-		font-size: 0.7rem;
-	}
-	.My-skills-left p {
-		font-size: 0.7rem;
-	}
-	.My-skills-left .progress-bar {
-		height: 0.5rem;
-	}
-	.My-skills-right h1 {
-		font-size: 1rem;
-	}
-	.My-services-content div i {
-		width: 3rem;
-		height: 3rem;
-		font-size: 1rem;
-	}
-	.My-services-content div h3 {
-		font-size: 1rem;
-	}
-	.My-services-content div p {
-		font-size: 0.8rem;
-	}
-	.Education div .name h3,
-	.Work div .name h3 {
-		font-size: 1rem;
-	}
-	.Education div .name p,
-	.Work div .name p {
-		font-size: 0.8rem;
-	}
-	.Contact-left div i {
-		font-size: 1rem;
-	}
-	.Contact-left h3 {
-		font-size: 1.2rem;
-	}
-	.Contact-right form input,
-	.Contact-right form textarea {
-		font-size: 0.8rem;
-	}
-	.Contact-right form .submit-button {
-		font-size: 0.8rem;
-	}
-}
+    .Header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-@media (max-width: 480px) {
-	.Header-title {
-		font-size: 1.2rem;
-	}
-	.Header li a {
-		font-size: 0.6rem;
-	}
-	.Profile img {
-		height: 200px;
-		width: 200px;
-	}
-	.Introduction .Text-name p {
-		font-size: 1.2rem;
-	}
-	.Introduction .Job-description p {
-		font-size: 1rem;
-	}
-	.Introduction .Greet p {
-		font-size: 0.8rem;
-	}
-	.About-me .About-me-button {
-		font-size: 0.5rem;
-		padding: 5px 15px;
-	}
-	.Header-text h3 {
-		font-size: 1.2rem;
-	}
-	.About-me-content .My-Profile .left img {
-		height: 150px;
-		width: 150px;
-	}
-	.Information p {
-		font-size: 0.7rem;
-	}
-	.Information p span {
-		font-size: 0.6rem;
-	}
-	.Download-cv .Hire-me-button,
-	.Download-cv .Download-cv-button {
-		font-size: 0.5rem;
-		padding: 5px 10px;
-	}
-	.My-skills-left p {
-		font-size: 0.5rem;
-	}
-	.My-skills-left .progress-bar {
-		height: 0.3rem;
-	}
-	.My-skills-right h1 {
-		font-size: 0.7rem;
-	}
-	.My-services-content div i {
-		width: 2.5rem;
-		height: 2.5rem;
-		font-size: 0.7rem;
-	}
-	.My-services-content div h3 {
-		font-size: 0.8rem;
-	}
-	.My-services-content div p {
-		font-size: 0.6rem;
-	}
-	.Education div .name h3,
-	.Work div .name h3 {
-		font-size: 0.8rem;
-	}
-	.Education div .name p,
-	.Work div .name p {
-		font-size: 0.6rem;
-	}
-	.Contact-left div i {
-		font-size: 0.7rem;
-	}
-	.Contact-left h3 {
-		font-size: 1rem;
-	}
-	.Contact-right form input,
-	.Contact-right form textarea {
-		font-size: 0.5rem;
-	}
-	.Contact-right form .submit-button {
-		font-size: 0.5rem;
-		padding: 5px 10px;
-	}
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
