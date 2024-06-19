@@ -3,53 +3,63 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
 }
 
 header {
-    background: #333;
+    background-color: #333;
     color: #fff;
-    padding: 1rem 0;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
+    padding: 10px 0;
     text-align: center;
 }
 
-header nav ul li {
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
     display: inline;
     margin: 0 15px;
 }
 
-header nav ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
 }
 
-.hero, .about, .skills, .portfolio, .contact {
-    padding: 2rem 5%;
+main {
+    padding: 20px;
+}
+
+.hero {
     text-align: center;
+    margin: 50px 0;
+}
+
+.hero img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+section {
+    margin: 20px 0;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
 }
 
 footer {
-    background: #333;
+    background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
+    padding: 10px 0;
     position: fixed;
+    width: 100%;
     bottom: 0;
-    width: 100%;
-}
-
-.work-item {
-    display: inline-block;
-    margin: 1rem;
-}
-
-.work-item img {
-    width: 100%;
-    height: auto;
 }
