@@ -5,38 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-   <script defer src="scripts.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <div id="warning">
-        <h1>Site Unavailable</h1>
-        <p>Sorry, this site is currently unavailable.</p>
-        <button id="enter-site">Enter Anyway</button>
-    </div>
-    <div id="portfolio" class="hidden">
-        <header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
             <h1>Welcome to My Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="welcome">
-                <h2>Hi, I'm [Your Name]</h2>
-                <p>Welcome to my personal portfolio. Explore to know more about me and my work.</p>
-                <img src="images/profile.jpg" alt="Profile Picture">
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2024 My Portfolio</p>
-        </footer>
-    </div>
+            <p>Hello! I'm [Your Name], a [Your Profession]. Explore my portfolio to know more about me and my work.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
 </body>
 </html>
