@@ -6,13 +6,26 @@ body {
     padding: 0;
 }
 
-header {
+.hidden {
+    display: none;
+}
+
+#warming, #portfolio {
+    text-align: center;
+    padding: 20px;
+}
+
+#warning {
+    background-color: #ffcccb;
+}
+
+#portfolio header {
     background-color: #ffb6c1;
     padding: 20px;
     text-align: center;
 }
 
-header h1 {
+#portfolio header h1 {
     margin: 0;
     color: #fff;
 }
@@ -32,11 +45,11 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
+#portfolio main {
     padding: 20px;
 }
 
-footer {
+#portfolio footer {
     background-color: #ffb6c1;
     text-align: center;
     padding: 10px;
@@ -45,7 +58,7 @@ footer {
     bottom: 0;
 }
 
-#about img, #projects img, #welcome img {
+#portfolio img {
     max-width: 100%;
     height: auto;
 }
