@@ -1,428 +1,55 @@
-/* General Styles */
-{
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background: #f4f4f4;
+    background-color: #f4f4f4;
     color: #333;
 }
 
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-/* Header Styles */
-.Header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.Header-title h3 {
-    font-size: 1.5rem;
-    color: #333;
-    text-transform: uppercase;
-}
-
-.Header-title h3 span {
-    color: #ff69b4;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1rem;
-    position: relative;
-}
-
-nav ul li a:hover {
-    color: #ff69b4;
-}
-
-/* Profile Section */
-.Profile {
-    text-align: center;
-    padding: 60px 0;
-}
-
-.Profile img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.Introduction {
-    padding: 20px 0;
-}
-
-.Introduction .Text-name p {
-    font-size: 2rem;
-    color: #333;
-}
-
-.Introduction .Job-description p {
-    font-size: 1.2rem;
-    color: #666;
-}
-
-.Introduction .Greet p {
-    font-size: 1rem;
-    color: #888;
-}
-
-/* About Me Section */
-.About-me {
-    padding: 60px 0;
-    background: #fff;
-    text-align: center;
-}
-
-.About-me-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.About-me-content .left img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.About-me-content .right {
-    max-width: 600px;
-}
-
-.About-me-content .right p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.Information p {
-    font-size: 1rem;
-    color: #666;
-}
-
-.Information p span {
-    font-weight: bold;
-    color: #333;
-}
-
-.Download-cv .Hire-me-button,
-.Download-cv .Download-cv-button {
-    background: #ff69b4;
+header {
+    background: #333;
     color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background 0.3s;
+    padding: 1rem 0;
 }
 
-.Download-cv .Hire-me-button:hover,
-.Download-cv .Download-cv-button:hover {
-    background: #e0558c;
-}
-
-/* Skills Section */
-.My-skills {
-    padding: 60px 0;
-    background: #f4f4f4;
-    text-align: center;
-}
-
-.My-skills .Header-text h3 {
-    font-size: 2rem;
-    color: #333;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.My-skills-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.My-skills-left,
-.My-skills-right {
-    flex: 1 1 300px;
-    margin: 10px;
-}
-
-.My-skills-left div {
-    margin-bottom: 20px;
-}
-
-.My-skills-left p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-.progress-bar {
-    background: #ddd;
-    height: 10px;
-    border-radius: 5px;
-}
-
-.progress-bar span {
-    display: block;
-    height: 100%;
-    border-radius: 5px;
-    background: #ff69b4;
-}
-
-.My-skills-right ul {
+header nav ul {
     list-style: none;
     padding: 0;
-}
-
-.My-skills-right ul li {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: #666;
-}
-
-/* Services Section */
-.My-services {
-    padding: 60px 0;
-    background: #fff;
     text-align: center;
 }
 
-.My-services-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.My-services-content div {
-    flex: 1 1 300px;
-    padding: 20px;
-    background: #f4f4f4;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.My-services-content div:hover {
-    transform: translateY(-10px);
-}
-
-.My-services-content i {
-    font-size: 2rem;
-    color: #ff69b4;
-    margin-bottom: 10px;
-}
-
-.My-services-content h3 {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.My-services-content p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Qualifications Section */
-.Qualification {
-    padding: 60px 0;
-    background: #f4f4f4;
-    text-align: center;
-}
-
-.Qualification-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.Education,
-.Work {
-    flex: 1 1 300px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.Education div,
-.Work div {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.Education div:last-child,
-.Work div:last-child {
-    margin-bottom: 0;
-}
-
-.Education i,
-.Work i {
-    font-size: 1.5rem;
-    color: #ff69b4;
-}
-
-.name h3 {
-    font-size: 1.2rem;
-    color: #333;
-    margin: 10px 0;
-}
-
-.name p {
-    font-size: 1rem;
-    color: #666;
-}
-
-.timeline {
-    width: 2px;
-    background: #ddd;
-    position: absolute;
-    top: 20px;
-    bottom: 20px;
-    left: 30px;
-}
-
-.timeline:before {
-    content: '';
-    width: 10px;
-    height: 10px;
-    background: #ff69b4;
-    border-radius: 50%;
-    position: absolute;
-    left: -4px;
-    top: 0;
-}
-
-.timeline:after {
-    content: '';
-    width: 10px;
-    height: 10px;
-    background: #ff69b4;
-    border-radius: 50%;
-    position: absolute;
-    left: -4px;
-    bottom: 0;
-}
-
-.Education div:first-child .timeline,
-.Work div:first-child .timeline {
-    top: 0;
-}
-
-.Education div:last-child .timeline,
-.Work div:last-child .timeline {
-    bottom: 0;
-}
-
-/* Contact Section */
-.Contact {
-    padding: 60px 0;
-    background: #fff;
-    text-align: center;
-}
-
-.Contact-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.Contact-left,
-.Contact-right {
-    flex: 1 1 400px;
-}
-
-.Contact-left div {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.Contact-left div i {
-    font-size: 1.5rem;
-    color: #ff69b4;
-    margin-right: 10px;
-}
-
-.Contact-left div span {
-    font-size: 1rem;
-    color: #666;
-}
-
-.Contact-right form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.Contact-right form input,
-.Contact-right form textarea {
-    flex: 1 1 100%;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    color: #666;
-    outline: none;
-    resize: none;
-}
-
-.Contact-right form .submit-button {
-    background: #ff69b4;
+header nav ul li a {
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 15px 20px;
-    cursor: pointer;
-    transition: background 0.3s;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.Contact-right form .submit-button:hover {
-    background: #e0558c;
+.hero, .about, .skills, .portfolio, .contact {
+    padding: 2rem 5%;
+    text-align: center;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .Header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-    }
+.work-item {
+    display: inline-block;
+    margin: 1rem;
+}
 
-    nav ul li {
-        margin: 10px 0;
-    }
+.work-item img {
+    width: 100%;
+    height: auto;
 }
