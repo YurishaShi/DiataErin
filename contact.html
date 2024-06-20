@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Erin's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles specific to contact.html */
+        .email {
+            color: #ff66b2; /* Pink color for email text */
+        }
+
+        .email-label {
+            color: #fff; /* White color for email label */
+            display: inline-block;
+            width: 80px; /* Adjust width as needed */
+        }
+
+        .social-link {
+            color: #ff66b2; /* Pink color for social media links */
+            text-decoration: none; /* Remove underline */
+            margin-left: 5px; /* Adjust spacing between links */
+        }
+
+        .social-link:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        /* Style for the form */
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #444; /* Darker background */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #b76eff; /* Lilac color for labels */
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            background-color: #555; /* Dark background for inputs */
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        form textarea {
+            height: 150px; /* Adjust height of textarea */
+            resize: none; /* Prevent resizing */
+        }
+
+        form input[type="submit"] {
+            background-color: #b76eff; /* Lilac button background */
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #ff66b2; /* Pink hover background */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me through any of the following channels:</p>
+            <ul>
+                <li><span class="email-label">Email:</span> <a href="mailto:erin@example.com" class="email">erin@example.com</a></li>
+                <li>Phone: No. +1234567</li>
+                <li>Social Media:
+                    <ul>
+                        <li><a href="#" class="social-link">Instagram</a></li>
+                        <li><a href="#" class="social-link">Facebook</a></li>
+                        <li><a href="#" class="social-link">Twitter</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Send me a message:</h3>
+            <form id="contact-form" action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 </p>
+    </footer>
+
+    <script>
+        // JavaScript for confirmation dialog on form submission
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            var confirmation = confirm("Are you sure you want to submit?");
+            if (!confirmation) {
+                event.preventDefault(); // Prevent form submission if user cancels
+            }
+        });
+    </script>
+</body>
+</html>
